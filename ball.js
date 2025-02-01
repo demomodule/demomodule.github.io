@@ -26,7 +26,7 @@ function Ball(pos, vel, radius, identity, others, color, follow, isInhibitor = f
   this.id = identity;
   this.others = others;
   this.r = radius;
-  this.color = isInhibitor ? "green" : color;
+  this.color = isInhibitor ? "red" : color;
   this.mass = this.r * 5;
   this.follow = follow;
   this.history = [];
@@ -41,7 +41,9 @@ function Ball(pos, vel, radius, identity, others, color, follow, isInhibitor = f
 
   this.velocity.mult(5);
 
-  this.isInhibitor = isInhibitor
+  this.isInhibitor = isInhibitor;
+  this.isLigand = isLigand;
+  this.isWhiteBall = isWhiteBall;
 }
 
 Ball.prototype.update = function () {
