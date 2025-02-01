@@ -1,5 +1,5 @@
 let attachedLigands = [null, null, null, null];
-let detachmentTime = 30;
+let detachmentTime = 10;
 let graceDuration = 70;  // Grace period after detachment in frames
 let animationDuration = 10;  // Duration of the animation in frames
 
@@ -11,6 +11,7 @@ let rectangles = [
   { x: 1225, y: 555, w: 10, h: 20 }   // Rectangle 4
 ];
 
+
 // Constrain ball bouncing inside rect(640, 300, 1280, 305)
 let boundingBox = {
   x: 640,
@@ -19,7 +20,7 @@ let boundingBox = {
   h: 305
 };
 
-function Ball(pos, vel, radius, identity, others, color, follow, isInhibitor = false) {
+function Ball(pos, vel, radius, identity, others, color, follow, isInhibitor = false, isLigand = false, isWhiteBall = false) {
   this.coeficient = 1;
   this.position = pos;
   this.velocity = vel;
