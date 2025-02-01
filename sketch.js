@@ -1,11 +1,11 @@
 // ─────────────────────────────────────────────
 // Global Constants and Variables
 // ─────────────────────────────────────────────
-const TARGET_CONC_MAX = 400;
+const TARGET_CONC_MAX = 800;
 const sliderMin = 0;
 const sliderMax = TARGET_CONC_MAX;
 const yMin = 0;
-const yMax = 9;
+const yMax = 10;
 
 let scene = 'achGraph';
 let currentSceneIndex = 0;
