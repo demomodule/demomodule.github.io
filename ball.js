@@ -1,5 +1,5 @@
 let attachedLigands = [null, null, null, null];
-let detachmentTime = 5;
+let detachmentTime = 30;
 let graceDuration = 70;  // Grace period after detachment in frames
 let animationDuration = 10;  // Duration of the animation in frames
 
